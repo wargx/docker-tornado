@@ -8,10 +8,10 @@ on build fetches latest Tornado version with pip, listens on port 8888.
 
 ### Tags:
 
-latest
-4.5.2
-4.4.3
-4.3.0
+- latest
+- 4.5.2
+- 4.4.3
+- 4.3.0
 
 ### Usage:
 
@@ -26,9 +26,9 @@ if another is not specified.
 
 ### Usage samples:
 
-$ docker run --name docker-tornado -p 8888:8888 -v /path/to/src:/usr/app warg/docker-tornado
+$ docker run -d --name docker-tornado -p 8888:8888 -v /path/to/src:/usr/app warg/docker-tornado
 
-$ docker run --name docker-tornado -p 8888:8888 -v /path/to/src:/usr/app -e "ENTRY=entry.py" warg/docker-tornado
+$ docker run -d --name docker-tornado -p 8888:8888 -v /path/to/src:/usr/app -e "ENTRY=entry.py" warg/docker-tornado
 
 ### Notes and additional features:
 
