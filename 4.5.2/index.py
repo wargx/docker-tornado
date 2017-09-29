@@ -12,7 +12,7 @@ define("port", default=8888, help="run on the given port", type=int)
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
-        self.write("Hello, from docker world")
+        self.write("Hello, from docker world, using tornado " + tornado.version)
 
 
 def main():
