@@ -4,7 +4,6 @@ import tornado.httpserver
 import tornado.ioloop
 import tornado.options
 import tornado.web
-#import tornado.version
 
 from tornado.options import define, options
 
